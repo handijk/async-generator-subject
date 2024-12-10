@@ -1,0 +1,23 @@
+{
+  "name": "@handijk/async-generator-subject",
+  "version": "1.0.0",
+  "license": "MIT",
+  "exports": {
+    "./empty-async-generator": "./empty-async-generator.ts",
+    "./subject-async-generator": "./subject-async-generator.ts",
+    "./replay-subject-async-generator": "./replay-subject-async-generator.ts"
+  },
+  "tasks": {},
+  "imports": {
+    "@deno/dnt": "jsr:@deno/dnt@^0.41.3",
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/expect": "jsr:@std/expect@^1.0.8",
+    "@std/testing": "jsr:@std/testing@^1.0.5"
+  },
+  "test": {
+    "exclude": ["~/"]
+  },
+  "publish": {
+    "exclude": ["~/"]
+  }
+}
