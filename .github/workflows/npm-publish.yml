@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-      - run: deno run -A scripts/build_npm.ts 0.1.0
+      - run: npx deno run -A scripts/build_npm.ts 0.1.0
       - run: npm publish --public
         working-directory: ./npm
         env:
